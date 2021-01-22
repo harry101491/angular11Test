@@ -1,0 +1,15 @@
+<div class="my-family">
+  <div class="my-family__heading">
+    My Family
+  </div>
+  <div>
+    <input type="text" #memberRef/>
+    <button (click)="onMemberClickHandler()">Add Member</button>
+    <p
+      *ngFor="let memberName of family; let i = index"
+      [ngStyle]="{ color: i % 2 === 0 ? 'red' : 'green' }"
+    >
+      {{ memberName }}
+    </p>
+  </div>
+</div>

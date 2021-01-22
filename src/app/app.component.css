@@ -1,0 +1,11 @@
+.my-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-family__heading {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
